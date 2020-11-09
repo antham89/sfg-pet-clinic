@@ -132,4 +132,8 @@
             </plugin>
         </plugins>
     </build>
+
+  <scm>
+    <tag>sfg-pet-clinic-0.0.5</tag>
+  </scm>
 </project>
