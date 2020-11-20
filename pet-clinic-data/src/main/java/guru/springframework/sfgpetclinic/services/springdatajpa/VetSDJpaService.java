@@ -34,6 +34,7 @@ public class VetSDJpaService implements VetService {
         return vetRepository.findById(aLong).orElse(null);
     }
 
+
     @Override
     public Vet save(Vet object) {
         return vetRepository.save(object);

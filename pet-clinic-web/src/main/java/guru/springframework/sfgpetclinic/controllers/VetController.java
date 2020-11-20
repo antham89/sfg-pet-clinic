@@ -13,6 +13,7 @@ import java.util.Set;
 /**
  * Created by jt on 7/22/18.
  */
+@RequestMapping("/vets")
 @Controller
 public class VetController {
 
@@ -22,7 +23,7 @@ public class VetController {
         this.vetService = vetService;
     }
 
-    @RequestMapping({"/vets", "/vets/index", "/vets/index.html", "/vets.html"})
+    @RequestMapping({"","/", "/index", "/index.html"})
     public String listVets(Model model){
 
         model.addAttribute("vets", vetService.findAll());
